@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
@@ -20,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnClick(View view) {
         textView.setText("Welcome "+editText.getText()+"!");
+        Toast.makeText(this, "Button is clicked", Toast.LENGTH_SHORT).show();
     }
 }
